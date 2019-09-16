@@ -5,12 +5,14 @@
 # Declaramos las variables
 numero = 5
 factorial = 1
+print("El numero es:", numero)
+print("El factorial a encontrar es:", factorial)
 # Declaramos ciclo iterador
 while numero > 0:
     factorial = factorial * numero
     numero -= 1 # Realizamos un decremento al iterador
 # Imprimimos el resultado
-print(factorial)
+print("El factorial es:",factorial)
 
 # Print vacio para un output mas legible
 print("")
@@ -24,6 +26,8 @@ print("")
 def factorial_numero():
     numero = 5
     factorial = 1
+    print("El numero es:", numero)
+    print("El factorial a encontrar es:", factorial)
 # Declaramos ciclo iterador
     while numero > 0:
         factorial = factorial * numero
