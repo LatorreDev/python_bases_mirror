@@ -7,7 +7,7 @@ import calculadora #No es necesario llamarlo con su extension
 from calculadora import suma, resta # se importan dos funciones de calculadora
 from calculadora import multiplicacion as mult  # Al llamar multiplicacion se llamara como mult al importar
                                                 # de este modo ya que al usar "as" podemos renombrar
-
+from calculadora import __name__ as __name__calculadora__
 # Otra forma de importr es 
 # from calculadora import * 
 # No es comun hacerlo asi, ya que importa todo, consume mas recursos y un desarrollador nuevo del equipo
@@ -26,3 +26,9 @@ print(resultado2)
 # extension es .pyc, lo cual significa que es un archivo compilado de python
 # Es creado para reducir el tiempo de ejecucion al volver a correr el programa ya que tomara
 # directamente el archivo compilado
+
+# Atributo main
+print(__name__) # Este valor siempre lo va a tener este atributo cuando el script que estamos ejecutando sea el principal
+print(__name__calculadora__)
+
+# if __name__ == '__main__': # Es este el script principal?
