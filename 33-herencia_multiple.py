@@ -6,7 +6,7 @@
 class Mascota:
     nombre = '' # Todas las mascotas llevan un nombre
 
-    def mostrar_nomre(self):
+    def mostrar_nombre(self):
         print(self.nombre)
 
 class Animal:
